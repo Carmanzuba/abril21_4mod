@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esencia y Ciencia - Productos Naturales y Bienestar</title>
+    <style>
+        :root {
+            --color-primario: #1A4D2E;
+            --color-secundario: #F5EFE6;
+            --color-acento: #FF9F29;
+            --color-texto-oscuro: #333333;
+            --color-texto-claro: #F5EFE6;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--color-secundario);
+            color: var(--color-texto-oscuro);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-image: url('https://github.com/Carmanzuba/nuevo-6/blob/main/portada5.png?raw=true');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: var(--color-secundario); /* Fondo adicional blanco */
+            height: 100vh;
+            display: flex;
+            flex-direction: column; /* Alinea el texto verticalmente */
+            justify-content: center; /* Centra el texto verticalmente */
+            align-items: center; /* Centra el texto horizontalmente */
+            text-align: center;
+            color: var(--color-texto-claro);
+            padding: 20px; /* Añade un poco de espacio alrededor del contenedor de texto */
+            box-sizing: border-box;
+        }
+
+        .header-content {
+            /* Contenedor para el texto del encabezado */
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Georgia', serif;
+            font-size: 3em;
+            margin-bottom: 10px; /* Reduce el margen inferior */
+            color: var(--color-texto-claro); /* Asegura que el color del texto sea el deseado */
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: var(--color-texto-claro); /* Asegura que el color del texto sea el deseado */
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: 'Georgia', serif;
+            color: var(--color-primario);
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--color-primario);
+            padding-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .accordion-container {
+            margin-top: 20px;
+        }
+
+        .accordion-item {
+            background-color: white;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+
+        .accordion-header {
+            background-color: #eee;
+            color: var(--color-texto-oscuro);
+            padding: 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .accordion-header::after {
+            content: '+';
+            font-size: 1.2em;
+        }
+
+        .accordion-header.active::after {
+            content: '-';
+        }
+
+        .accordion-content {
+            padding: 15px;
+            display: none;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="tel"],
+        .contact-form textarea {
+            width: calc(100% - 12px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .contact-form button {
+            background-color: var(--color-acento);
+            color: var(--color-texto-claro);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .contact-form button:hover {
+            opacity: 0.9;
+        }
+
+        /* Diseño Responsivo */
+        @media (max-width: 768px) {
+            header {
+                height: 70vh;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1.1em;
+            }
+
+            section {
+                padding: 30px 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                height: 60vh;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            section {
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Esencia y Ciencia</h1>
+            <p>Descubre la pureza de la naturaleza y el poder de la ciencia.</p>
+        </div>
+    </header>
+
+    <section id="quienes-somos">
+        <h2>¿Quiénes somos?</h2>
+        <p>En Esencia y Ciencia, nos dedicamos a la producción artesanal de productos naturales,融合ando la sabiduría ancestral de las plantas con los avances de la ciencia moderna. Creemos en el poder curativo y revitalizante de la naturaleza, y nos esforzamos por ofrecerte productos de la más alta calidad, elaborados con ingredientes cuidadosamente seleccionados y procesos respetuosos con el medio ambiente.</p>
+    </section>
+
+    <section id="mision">
+        <h2>Misión</h2>
+        <p>Nuestra misión es promover el bienestar integral de las personas a través de productos naturales efectivos y sostenibles. Buscamos educar sobre los beneficios de las plantas medicinales y fomentar un estilo de vida en armonía con la naturaleza.</p>
+    </section>
+
+    <section id="vision">
+        <h2>Visión</h2>
+        <p>Aspiramos a ser líderes en Latinoamérica en la producción y educación sobre productos naturales, reconocidos por nuestra calidad, innovación y compromiso con la salud y el medio ambiente.</p>
+    </section>
+
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <p>Explora nuestra selección de productos naturales, elaborados con pasión y dedicación:</p>
+        <ul>
+            <li>Aceites Esenciales puros y blends únicos</li>
+            <li>Jabones Artesanales enriquecidos con ingredientes naturales</li>
+            <li>Tinturas madre para el bienestar integral</li>
+            <li>Bálsamos y Ungüentos terapéuticos</li>
+            <li>Y mucho más...</li>
+        </ul>
+    </section>
+
+    <section id="cursos">
+        <h2>Nuestros Cursos</h2>
+        <p>Amplía tus conocimientos y conecta con la naturaleza a través de nuestros cursos:</p>
+        <ul>
+            <li>Cursos online y presenciales de Herbolaria</li>
+            <li>Talleres de Cosmética Natural DIY</li>
+            <li>Seminarios sobre Destilación de Aceites Esenciales</li>
+            <li>Programas de Huertos Urbanos y Plantas Medicinales</li>
+        </ul>
+    </section>
+
+    <section id="acordeon">
+        <h2>Explora más</h2>
+        <div class="accordion-container">
+            <div class="accordion-item">
+                <div class="accordion-header">Plantas Medicinales</div>
+                <div class="accordion-content">
+                    <p>Descubre las propiedades curativas de diversas plantas medicinales, sus usos tradicionales y aplicaciones modernas en el bienestar.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Cosmética Natural</div>
+                <div class="accordion-content">
+                    <p>Aprende a elaborar tus propios productos de belleza y cuidado personal con ingredientes naturales, evitando químicos dañinos y respetando tu piel.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Destilación de Aceites Esenciales</div>
+                <div class="accordion-content">
+                    <p>Sumérgete en el fascinante mundo de la extracción de aceites esenciales, comprendiendo los procesos y beneficios de estas poderosas esencias.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Jabones Artesanales</div>
+                <div class="accordion-content">
+                    <p>Conoce el arte de la saponificación y crea jabones únicos con ingredientes naturales, aromas y propiedades beneficiosas para la piel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes alguna pregunta o deseas saber más sobre nuestros productos y cursos? ¡No dudes en contactarnos!</p>
+        <form class="contact-form" id="contactForm">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <script>
+        // Acordeón
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const isActive = header.classList.contains('active');
+
+                // Cerrar todos los demás acordeones
+                accordionHeaders.forEach(otherHeader => {
+                    if (otherHeader !== header && otherHeader.classList.contains('active')) {
+                        otherHeader.classList.remove('active');
+                        otherHeader.nextElementSibling.style.display = 'none';
+                    }
+                });
+
+                header.classList.toggle('active');
+                content.style.display = isActive ? 'none' : 'block';
+            });
+        });
+
+        // Formulario de Contacto
+        const contactForm = document.getElementById('contactForm');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar el envío por defecto
+
+            alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+            this.reset(); // Limpiar el formulario
+        });
+    </script>
+</body>
+</html>
